@@ -46,7 +46,7 @@ X_train , X_test , y_train , y_test = train_test_split(X, y , test_size=0.3, ran
 rf = RandomForestClassifier(random_state=RANDOM_SEED)
 param_grid_forst = {
     'n_estimators': [200,400,700],
-    'max_depth':[10,20,30],
+    'max_depth':[10,20,30, 40],
     'criterion': ['gini','entropy'],
     'max_leaf_nodes': [50,70, 100]
 }
