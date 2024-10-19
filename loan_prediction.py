@@ -48,7 +48,7 @@ param_grid_forst = {
     'n_estimators': [200,400,700],
     'max_depth':[10,20,30],
     'criterion': ['gini','entropy'],
-    'max_leaf_nodes': [50,100]
+    'max_leaf_nodes': [50,70, 100]
 }
 grid_forest = GridSearchCV(estimator=rf, 
                            param_grid=param_grid_forst,
